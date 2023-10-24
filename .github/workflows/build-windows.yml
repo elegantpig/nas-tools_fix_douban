@@ -21,7 +21,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install wheel numpy==1.23.5 pyparsing==3.0.9 wxpython==4.2.0 pyinstaller==5.7.0
         git clone --depth=1 -b v2.9.1 https://github.com/elegantpig/nas-tools_fix_douban --recurse-submodule
-        cd nas-tools
         pip install -r requirements.txt
         echo ("NASTOOL_CONFIG=D:/a/nas-tools/nas-tools/nas-tools/config/config.yaml") >> $env:GITHUB_ENV
         echo $env:NASTOOL_CONFIG
