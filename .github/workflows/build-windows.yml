@@ -23,7 +23,7 @@ jobs:
         git clone --depth=1 -b v2.9.1 https://github.com/elegantpig/nas-tools_fix_douban --recurse-submodule
         cd nas-tools_fix_douban
         pip install -r requirements.txt
-        echo ("NASTOOL_CONFIG=D:/a/nas-tools/nas-tools/nas-tools/config/config.yaml") >> $env:GITHUB_ENV
+        echo ("NASTOOL_CONFIG=D:/a/nas-tools_fix_douban/nas-tools_fix_douban/nas-tools_fix_douban/config/config.yaml") >> $env:GITHUB_ENV
         echo $env:NASTOOL_CONFIG
       shell: pwsh
     - name: package through pyinstaller
@@ -44,7 +44,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: windows
-        path: D:/a/nas-tools/nas-tools/nas-tools/windows/dist/nas-tools.exe
+        path: D:/a/nas-tools_fix_douban/nas-tools_fix_douban/nas-tools_fix_douban/windows/dist/nas-tools.exe
 
   Create-release_Send-message:
     runs-on: ubuntu-latest
