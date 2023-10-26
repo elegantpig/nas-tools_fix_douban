@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install wheel numpy==1.23.5 pyparsing==3.0.9 wxpython==4.2.0 pyinstaller==5.7.0
         pip install -r requirements.txt
-        echo ("NASTOOL_CONFIG=D:/a/nas-tools-dev/nas-tools-dev/nas-tools-dev/config/config.yaml") >> $env:GITHUB_ENV
+        echo ("NASTOOL_CONFIG=D:/a/nas-tools_fix_douban/nas-tools_fix_douban/nas-tools_fix_douban/config/config.yaml") >> $env:GITHUB_ENV
         echo $env:NASTOOL_CONFIG
         cd third_party
         git submodule init
