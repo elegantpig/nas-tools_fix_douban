@@ -5,7 +5,7 @@ from functools import reduce
 from threading import Lock
 
 import undetected_chromedriver as uc
-from webdriver_manager_cn.chrome import ChromeDriverManager
+from webdrivermanager_cn.chrome import ChromeDriverManager
 
 import app.helper.cloudflare_helper as CloudflareHelper
 from app.utils import SystemUtils, RequestUtils
